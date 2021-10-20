@@ -1,0 +1,39 @@
+footer{
+    background-color: #333333!important;
+    margin-top: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #f2f2f2;
+    font-family: 'Poppins',sans-serif;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+footer h3{
+    background-color: transparent;
+    
+}
+
+footer p{
+    background-color: transparent;
+    width: 60%;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer span{
+    color: #00FFFF;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 768px){
+    footer h3{
+        width: 70%;
+        text-align: center;
+    }
+}

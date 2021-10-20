@@ -1,0 +1,126 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    padding-top: 30px;
+  }
+
+.navbar-menu{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    margin: 0px 50px 0px 0px;
+    color: #f2f2f2;
+    font-size: 16px;
+}
+
+.navbar-menu li{
+    padding: 0px 20px;
+}
+
+.navbar-menu li:hover{
+    cursor: pointer;
+    color: #00FFFF;
+}
+
+.navbar-brand-logo{
+    margin: 0px 50px;
+    padding: 5px 15px;
+    font-size: 24px;
+    border: 2px solid #00FFFF;
+    border-radius: 50%;
+    color: #00FFFF;
+}
+
+.resume{
+    font-family: 'Poppins',sans-serif;
+    color: #00FFFF;
+    text-decoration: none;
+    border: 1px solid #00FFFF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    transition: all 0.3s ease;
+}
+
+.resume:hover{
+    background-color: #00FFFF;
+    color: #262626;
+}
+
+@media screen and (max-width: 768px){
+
+    nav{
+        position: relative;
+    }
+
+    .hamburger{
+        position: absolute;
+        cursor: pointer;
+        right: 5%;
+        top: 50%;
+        transform: translate(-5%, -50%);
+        z-index: 2;
+    }
+
+    .line{
+        width: 30px;
+        height: 3px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .navbar-menu{
+        position: fixed;
+        background-color: #00FFFF;
+        height: 80vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        clip-path: circle(100px at 90% -20%);
+        -webkit-clip-path: circle(100px at 90% -20%);
+        transition: all 1s ease;
+        pointer-events: none;
+    }
+
+    .navbar-menu.open{
+        clip-path: circle(1000px at 90% -20%);
+        -webkit-clip-path: circle(1000px at 90% -20%);
+        pointer-events: all;
+    }
+
+    .navbar-menu li{
+        padding: 10px 0px;
+        color: #333333;
+        opacity: 0;
+    }
+
+    .navbar-menu li:nth-child(1){
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .navbar-menu li:nth-child(2){
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .navbar-menu li:nth-child(3){
+        transition: all 0.5s ease 0.6s;
+    }
+
+    .navbar-menu li:nth-child(4){
+        transition: all 0.5s ease 0.8s;
+    }
+
+    .navbar-menu li:nth-child(5){
+        transition: all 0.5s ease 1s;
+    }
+
+    .navbar-menu li.fade{
+        opacity: 1;
+    }
+
+}

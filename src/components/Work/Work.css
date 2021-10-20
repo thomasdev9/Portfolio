@@ -1,0 +1,142 @@
+.section-work{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Poppins',sans-serif;
+    color: #f2f2f2;
+    padding-top: 200px;
+}
+
+.section-work hr{
+    color: #f2f2f2;
+    opacity: 1;
+    width: 35%;
+}
+
+.work-container{
+    padding-top: 20px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.work-card{
+    height: 380px;
+    width: 350px;
+    box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 16px 2px rgba(0,0,0,0.6);
+    transition: all 0.5s ease;
+    position: relative;
+    cursor: pointer;
+}
+
+.work-card label{
+    background-color: #262626;
+    position: absolute;
+    padding: 7px;
+    border-radius: 50%;
+    color: #00FFFF;
+    top: 10px;
+    left: 10px;
+}
+
+.work-card-body{
+    height: 250px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 500;
+    
+}
+
+.work-card-body img{
+    height: 250px;
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    padding: 0px;
+}
+
+.work-card-body h2{
+    background-color: transparent;
+}
+
+.work-card-footer{
+    background-color: #262626;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-card-footer h6{
+    text-align: center;
+    background-color: transparent;
+    width: 80%;
+    padding-top: 20px;
+}
+
+.tags-container{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.work-card-footer button{
+    background-color: #00FFFF;
+    color: #333333;
+    border: none;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 25px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    height: 25px;
+    width: auto;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.work-container .row .col-3{
+    margin-right: 40px;
+}
+
+@media screen and (max-width: 768px){
+    .work-container .row{
+        flex-direction: column;
+        padding-top: 0px;
+    }
+
+    .work-container .row .col-3{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0px;
+        width: 300px;
+        padding-bottom: 50px;
+    }
+
+    .work-card{
+        width: 300px;
+    }
+
+    .work-card-body{
+        width: 300px;
+    }
+}
