@@ -27,7 +27,7 @@ function Experience() {
                         <h5>Education</h5>
                         <hr/>
                         <h5 className="education-title">Department of Informatics and Telecommunications, <br/>National and Kapodistrian University of Athens, Greece </h5>
-                        <span>October 2016 – Present</span>
+                        <span>October 2016 – June 2021</span>
                     </div>
                 </div>
                 
